@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <title>Вход в чат</title>
+    <style>
+        body {
+            background: #fcfcfc;
+        }
+
+        .form {
+            width: 400px;
+            height: 226px;
+            margin-left: 350px;
+        }
+
+        #in {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Форма авторизации -->
+    <div class="container">
+        <div class="py-5 text-center">
+            <h1>Авторизация</h1>
+        </div>
+        <div class="form">
+            <form action="login" method="POST">
+                <label>Логин</label>
+                <input type="text" name="username" placeholder="Введите логин" class="form-control" required>
+                <br>
+                <label>Пароль</label>
+                <input type="password" name="password" class="form-control" placeholder="Введите пароль" required>
+                <br>
+                <input id="in" type="submit" value="Отправить" class="btn btn-danger">
+                <p>Вы здесь впервые? <a href="/register.html">Зарегистрироваться!</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
